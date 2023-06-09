@@ -1,0 +1,22 @@
+*DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# AMD
+devextreme_amd
+@devextreme
+
+# Webpack bundles
+bundle.js
+
+# TS result
+systemjs-angular-globalize/dist
+rollup-angular/dist
+rollup-angular/src/aot
+webpack-angular-globalize/dist

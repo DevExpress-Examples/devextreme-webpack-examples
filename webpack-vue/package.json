@@ -1,0 +1,28 @@
+{
+  "name": "devextreme-webpack-vue",
+  "version": "1.0.0",
+  "description": "DevExtreme with webpack and Vue example",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack-dev-server"
+  },
+  "author": "DevExpress",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^16.0.0-beta.7",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.0.0-alpha.11",
+    "devextreme": "^22.2.3",
+    "devextreme-vue": "^22.2.3",
+    "vue": "^3.0.0",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
