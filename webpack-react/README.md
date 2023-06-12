@@ -1,6 +1,6 @@
-# DevExtreme with Webpack and AngularJS example
+# DevExtreme with Webpack and React example
 
-This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the [AngularJS](https://angularjs.org/) approach is used. The example requires installed [Webpack](http://webpack.github.io/docs/).
+This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the [React](https://react.dev/) approach is used. The example requires installed [Webpack](http://webpack.github.io/docs/).
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
 
 2. Go to the project folder
  ``` text
- cd webpack-angularjs
+ cd webpack-react
  ```
 
 3. Install the required modules
@@ -23,8 +23,6 @@ This project demonstrates how to use DevExtreme widgets loading only modules wit
  ``` text
  npx webpack
  ```
-
-5. Open `index.html` in your browser
 
 ## Resources
 
