@@ -4,27 +4,27 @@ This [jQuery](http://jquery.com/) example displays DevExtreme widgets loading on
 
 ## Getting Started
 
-1. Clone the repository
+1. Clone the repository.
  ``` text
  git clone https://github.com/DevExpress-Examples/devextreme-webpack-examples.git
  ```
 
-2. Go to the project folder
+2. Go to the project folder.
  ``` text
  cd webpack-jquery
   ```
 
-3. Install the required modules
+3. Install the required modules.
  ``` text
  npm install
  ```
 
-4. Bundle the modules
+4. Bundle the modules.
  ``` text
  npx webpack
  ```
 
-5. Open `index.html` in your browser
+5. Open `index.html` in your browser.
 
 ## Resources
 

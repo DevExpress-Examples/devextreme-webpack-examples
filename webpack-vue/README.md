@@ -4,22 +4,22 @@ This [Vue](https://vuejs.org/) example displays DevExtreme widgets loading only 
 
 ## Getting Started
 
-1. Clone the repository
+1. Clone the repository.
  ``` text
  git clone https://github.com/DevExpress-Examples/devextreme-webpack-examples.git
  ```
 
-2. Go to the project folder
+2. Go to the project folder.
  ``` text
  cd webpack-vue
  ```
 
-3. Install the required modules
+3. Install the required modules.
  ``` text
  npm install
  ```
 
-4. Bundle the modules
+4. Bundle the modules.
  ``` text
  npx webpack
  ```
