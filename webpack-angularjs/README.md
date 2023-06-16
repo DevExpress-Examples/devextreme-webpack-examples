@@ -1,31 +1,31 @@
-# DevExtreme with webpack and AngularJS example
+# DevExtreme with a Webpack and AngularJS example
 
-This project demonstrates how to use DevExtreme widgets loading only modules with the required functionality. This demo shows the dxButton widget with the alert dialog as an example. Here, the [AngularJS](https://angularjs.org/) approach is used. The example requires installed [webpack](http://webpack.github.io/docs/).
+This [AngularJS](https://angularjs.org/) example displays DevExtreme widgets loading only required modules. The application contains a button (a [dxButton](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxButton/) widget). When you click this button, an [alert dialog](https://js.devexpress.com/Documentation/ApiReference/Common/Utils/ui/dialog/#alertmessageHtml_title) appears. The example requires [Webpack](http://webpack.github.io/docs/) to be installed.
 
 ## Getting Started
 
-1. Clone the repository
+1. Clone the repository.
  ``` text
- git clone https://github.com/devexpress/devextreme-examples.git
+ git clone https://github.com/DevExpress-Examples/devextreme-webpack-examples.git
  ```
 
-2. Go to the project folder
+2. Go to the project folder.
  ``` text
- cd devextreme-examples/webpack-angularjs
+ cd webpack-angularjs
  ```
 
-3. Install the required modules
+3. Install the required modules.
  ``` text
  npm install
  ```
 
-4. Bundle the modules
+4. Bundle the modules.
  ``` text
  npx webpack
  ```
 
-5. Open `index.html` in your browser
+5. Open `index.html` in your browser.
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](http://js.devexpress.com/Documentation/Guide/Common/Modularity?approach=AngularJS).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](https://js.devexpress.com/Documentation/Guide/Common/Modularity/Link_Modules/#Use_Webpack).
