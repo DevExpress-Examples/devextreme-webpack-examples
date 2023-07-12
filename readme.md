@@ -5,15 +5,13 @@
 <!-- default badges end -->
 # DevExtreme with Webpack 
 
-This repository contains a set of examples that show how to use [Webpack](http://webpack.github.io/docs/) with different approaches: [jQuery](http://jquery.com/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/), [Knockout](http://knockoutjs.com/), [React](https://reactjs.org/), and [Vue](https://vuejs.org/). Each example is an application with a [dxButton](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxButton/) widget. When you click this button, an [alert dialog](https://js.devexpress.com/Documentation/ApiReference/Common/Utils/ui/dialog/#alertmessageHtml_title) appears. All applications require Node.js and npm to install the [DevExtreme](http://js.devexpress.com/) package and its dependencies.
+This repository contains a set of examples that show how to use [Webpack](http://webpack.github.io/docs/) with different approaches: [jQuery](http://jquery.com/), [Angular](https://angular.io/), [React](https://reactjs.org/), and [Vue](https://vuejs.org/). Each example is an application with a [dxButton](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxButton/) widget. When you click this button, an [alert dialog](https://js.devexpress.com/Documentation/ApiReference/Common/Utils/ui/dialog/#alertmessageHtml_title) appears. All applications require Node.js and npm to install the [DevExtreme](http://js.devexpress.com/) package and its dependencies.
 
 Used Technologies:     | Example Name:
 ---------------------- | --------------
 Webpack with jQuery    | [webpack-jquery](webpack-jquery/)
 Webpack with React     | [webpack-react](webpack-react/)
 Webpack with Vue       | [webpack-vue](webpack-vue/)
-Webpack with AngularJS | [webpack-angularjs](webpack-angularjs/)
-Webpack with Knockout  | [webpack-knockout](webpack-knockout/)
 
 ## Documentation
 
