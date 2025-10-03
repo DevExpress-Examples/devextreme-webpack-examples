@@ -308,3 +308,22 @@ TesterMetadata.xml
 
 !*/wwwroot/css/Site.css
 *.DS_Store
+
+# Repository-specific rules for devextreme-webpack-examples
+
+# Logs
+npm-debug.log*
+
+# AMD
+devextreme_amd
+@devextreme
+
+# Webpack bundles
+bundle.js
+
+# TS result
+systemjs-angular-globalize/dist
+rollup-angular-globalize/dist
+rollup-angular/dist
+rollup-angular/src/aot
+webpack-angular-globalize/dist
