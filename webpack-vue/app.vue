@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ButtonExample from "./components/button-example";
+import ButtonExample from "./components/button-example.vue";
 
 export default {
   components: {

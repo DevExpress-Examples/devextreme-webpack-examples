@@ -1,19 +1,20 @@
 <template>
     <dx-button
-    text="click me"
-    v-on:click="greet" />
+    text="Say 'Hello world'"
+    @click="showAlert" />
 </template>
 
 <script>
-import { DxButton } from "devextreme-vue/ui/button";
+import { DxButton } from "devextreme-vue/button";
+import { alert } from "devextreme/ui/dialog";
 
 export default {
   components: {
     DxButton
   },
   methods: {
-    greet: function () {
-      alert("Hello!");
+    showAlert() {
+      alert("Hello world!", "", false);
     }
   }
 };
