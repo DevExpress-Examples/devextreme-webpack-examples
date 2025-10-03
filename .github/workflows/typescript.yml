@@ -11,37 +11,12 @@ on:
       - "[0-9][0-9].[0-9].[0-9]*"
 
 jobs:
-  Angular:
+  webpack-jquery:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
     - name: Get sources
-      uses: actions/checkout@v3
-
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-
-    - name: Restore npm cache
-      uses: actions/cache@v3
-      with:
-        path: ./Angular/node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node-modules
-
-    - name: Run npm install
-      working-directory: Angular
-      run: npm install --no-audit --no-fund
-
-    - name: TSC Angular
-      working-directory: Angular
-      run: npm run build
-
-  React:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-    - name: Get sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Use Node.js
       uses: actions/setup-node@v4
@@ -49,41 +24,70 @@ jobs:
         node-version: '20'
 
     - name: Restore npm cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
-        path: ./React/node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        path: ./webpack-jquery/node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('webpack-jquery/package-lock.json') }}
         restore-keys: ${{ runner.os }}-node-modules
 
     - name: Run npm install
-      working-directory: React
+      working-directory: webpack-jquery
       run: npm install --no-audit --no-fund
 
-    - name: TSC React
-      working-directory: React
+    - name: Build webpack-jquery
+      working-directory: webpack-jquery
       run: npm run build
 
-  Vue:
+  webpack-react:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
     - name: Get sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Use Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
 
     - name: Restore npm cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
-        path: ./Vue/node_modules
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        path: ./webpack-react/node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('webpack-react/package-lock.json') }}
         restore-keys: ${{ runner.os }}-node-modules
 
     - name: Run npm install
-      working-directory: Vue
+      working-directory: webpack-react
       run: npm install --no-audit --no-fund
 
-    - name: TSC Vue
-      working-directory: Vue
-      run: npm run type-check
+    - name: Build webpack-react
+      working-directory: webpack-react
+      run: npm run build
+
+  webpack-vue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - name: Get sources
+      uses: actions/checkout@v4
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Restore npm cache
+      uses: actions/cache@v4
+      with:
+        path: ./webpack-vue/node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('webpack-vue/package-lock.json') }}
+        restore-keys: ${{ runner.os }}-node-modules
+
+    - name: Run npm install
+      working-directory: webpack-vue
+      run: npm install --no-audit --no-fund
+
+    - name: Build webpack-vue
+      working-directory: webpack-vue
+      run: npm run build
