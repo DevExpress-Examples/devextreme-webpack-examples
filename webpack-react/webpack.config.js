@@ -16,12 +16,18 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules\/(?!devextreme)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env'],
-            plugins: ["transform-react-jsx"]
+            presets: [
+              ['@babel/preset-env', {
+                targets: {
+                  browsers: ['last 2 versions', 'ie >= 11']
+                }
+              }],
+              '@babel/preset-react'
+            ]
           }
         }
       },
@@ -37,5 +43,10 @@ module.exports = {
         use: "url-loader?name=[name].[ext]"
       }
     ]
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 2000000,
+    maxAssetSize: 2000000
   }
 };

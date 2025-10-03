@@ -2,6 +2,8 @@
 
 This [React](https://react.dev/) example displays DevExtreme widgets loading only required modules. The application contains a button (a [dxButton](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxButton/) widget). When you click this button, an [alert dialog](https://js.devexpress.com/Documentation/ApiReference/Common/Utils/ui/dialog/#alertmessageHtml_title) appears. The example requires [Webpack](http://webpack.github.io/docs/) to be installed.
 
+**Technologies:** React 18, DevExtreme 25.1.3, Webpack 4, Babel 7
+
 ## Getting Started
 
 1. Clone the repository.
@@ -19,10 +21,15 @@ This [React](https://react.dev/) example displays DevExtreme widgets loading onl
  npm install
  ```
 
-4. Bundle the modules.
+4. Build and serve the application.
  ``` text
- npx webpack
+ npm start
  ```
+ This will build the bundle and automatically open the application in your browser at http://localhost:8080.
+
+Alternatively, you can:
+ - Use webpack-dev-server with live reload: `npm run serve`
+ - Build manually: `npm run build`
 
 ## Resources
 
