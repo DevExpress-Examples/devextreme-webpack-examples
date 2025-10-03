@@ -33,6 +33,7 @@ Alternatively, you can:
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](https://js.devexpress.com/Documentation/Guide/Common/Modularity/Link_Modules/).
+For information on configuring Webpack check [Additional Configuration for Webpack](https://js.devexpress.com/Vue/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Additional_Configuration_for_Webpack).
+For detailed informaiton on modules structure check [DevExtreme Vue - Modules Structure](https://js.devexpress.com/Vue/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/)
 
 For Vite documentation, visit [Vite Guide](https://vitejs.dev/guide/).
