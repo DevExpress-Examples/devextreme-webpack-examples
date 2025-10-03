@@ -19,12 +19,17 @@ This [jQuery](http://jquery.com/) example displays DevExtreme widgets loading on
  npm install
  ```
 
-4. Bundle the modules.
+4. Build and serve the application.
  ``` text
- npx webpack
+ npm start
  ```
+ This will build the bundle and automatically open the application in your browser at http://localhost:8080.
 
-5. Open `index.html` in your browser.
+Alternatively, you can build manually:
+ ``` text
+ npm run build
+ ```
+ Then open `index.html` in your browser.
 
 ## Resources
 
