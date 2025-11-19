@@ -16,7 +16,10 @@ Webpack with Vue       | [webpack-vue](webpack-vue/)
 
 ## Documentation
 
-- [Use Webpack](https://js.devexpress.com/Documentation/Guide/Common/Modularity/Link_Modules/#Use_Webpack)
+- [jQuery - Use Webpack](https://js.devexpress.com/jQuery/Documentation/Guide/Common/Modularity/Link_Modules/#Use_Webpack)
+- [Angular - Use Webpack](https://js.devexpress.com/Angular/Documentation/Guide/Angular_Components/Getting_Started/Other_Approaches/Using_Webpack/)
+- [React - Use Webpack](https://js.devexpress.com/React/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Additional_Configuration_for_Webpack)
+- [Vue - Use Webpack](https://js.devexpress.com/Vue/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Additional_Configuration_for_Webpack)
 
 ## More Examples
 
