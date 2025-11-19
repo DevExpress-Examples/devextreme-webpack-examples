@@ -33,4 +33,4 @@ Alternatively, you can:
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](https://js.devexpress.com/Documentation/Guide/Common/Modularity/Link_Modules/#Use_Webpack).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](https://js.devexpress.com/React/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Additional_Configuration_for_Webpack).

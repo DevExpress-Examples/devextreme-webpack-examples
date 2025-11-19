@@ -33,4 +33,4 @@ Alternatively, you can build manually:
 
 ## Resources
 
-For detailed information on modularity, see the [DevExtreme Modularity Guide](https://js.devexpress.com/Documentation/Guide/Common/Modularity/Link_Modules/#Use_Webpack).
+For detailed information on modularity, see the [DevExtreme Modularity Guide](https://js.devexpress.com/jQuery/Documentation/Guide/Common/Modularity/Link_Modules/#Use_Webpack).
