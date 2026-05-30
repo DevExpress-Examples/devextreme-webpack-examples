@@ -25,7 +25,7 @@ function Resolve-NpmVersion {
     $betaVersion = "$version-beta"
     $null = npm view "$packageName@$betaVersion" version 2>&1
     if ($LASTEXITCODE -eq 0) {
-        Write-Output "Version $version not found on npm, using $betaVersion"
+        Write-Host "Version $version not found on npm, using $betaVersion"
         return $betaVersion
     }
 
