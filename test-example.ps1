@@ -9,6 +9,30 @@ $global:BUILD_VERSION = $buildVersion
 $global:ERROR_CODE = 0
 $global:FAILED_PROJECTS = @()
 
+function Resolve-NpmVersion {
+    param (
+        [string]$packageName,
+        [string]$version
+    )
+
+    # Check if the exact version exists on npm
+    $null = npm view "$packageName@$version" version 2>&1
+    if ($LASTEXITCODE -eq 0) {
+        return $version
+    }
+
+    # Exact version not found — try the beta tag
+    $betaVersion = "$version-beta"
+    $null = npm view "$packageName@$betaVersion" version 2>&1
+    if ($LASTEXITCODE -eq 0) {
+        Write-Output "Version $version not found on npm, using $betaVersion"
+        return $betaVersion
+    }
+
+    # Neither found — return original and let npm install surface the error
+    return $version
+}
+
 function Update-PackageVersion {
     param (
         [string]$packageJsonPath,
@@ -17,7 +41,7 @@ function Update-PackageVersion {
     )
 
     $packageJson = Get-Content -Path $packageJsonPath -Raw | ConvertFrom-Json
-    
+
     if ($packageJson.dependencies.$packageName) {
         $packageJson.dependencies.$packageName = $version
         $packageJson | ConvertTo-Json -Depth 10 | Set-Content -Path $packageJsonPath
@@ -43,11 +67,14 @@ function Process-WebpackProject {
 
     try {
         $packageJsonPath = "package.json"
-        
+
+        # Resolve the actual available version (falls back to -beta if stable not published yet)
+        $resolvedVersion = Resolve-NpmVersion -packageName "devextreme" -version $buildVersion
+
         if (Test-Path $packageJsonPath) {
-            Write-Output "Updating DevExtreme package versions to $buildVersion"
+            Write-Output "Updating DevExtreme package versions to $resolvedVersion"
             foreach ($package in $devextremePackages) {
-                Update-PackageVersion -packageJsonPath $packageJsonPath -packageName $package -version $buildVersion
+                Update-PackageVersion -packageJsonPath $packageJsonPath -packageName $package -version $resolvedVersion
             }
         }
 
